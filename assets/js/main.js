@@ -1,7 +1,15 @@
 // Ask user age
 var userAge = parseInt(prompt('How old are you?'));
+// Checks if the user used a valid number
+if (isNaN(userAge)) {
+    alert('You must insert a valid number')
+}
 // Ask how many km
 var userDistance = parseInt(prompt('How long is your journey? Write the amount of Km:'));
+// Checks if the user used a valid number
+if (isNaN(userDistance)) {
+    alert('You must insert a valid number')
+}
 // The price is 0.21$ per km
 var pricePerKm = 0.21;
 
@@ -29,3 +37,5 @@ if (userAge < 18) {
     finalPrice = ticketPrice
 }
 console.log(finalPrice);
+
+document.getElementById('final_price').innerHTML = "Your ticket's price is " + finalPrice.toFixed(2) + "$"
