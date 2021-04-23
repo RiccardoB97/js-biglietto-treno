@@ -7,3 +7,8 @@ var pricePerKm = 0.21;
 
 // Multiplies the user distance times the price per km
 var ticketPrice = (userDistance * pricePerKm);
+
+var discountUnderAge = (ticketPrice / 100) * 20;
+console.log(discountUnderAge);
+var discountSenior = (ticketPrice / 100) * 40;
+console.log(discountSenior);
