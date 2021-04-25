@@ -1,3 +1,6 @@
+// Ask user name
+var userName = prompt("Please insert your full name:")
+
 // Ask user age
 var userAge = parseInt(prompt('How old are you?'));
 // Checks if the user used a valid number
@@ -15,15 +18,12 @@ var pricePerKm = 0.21;
 
 // Multiplies the user distance times the price per km
 var ticketPrice = (userDistance * pricePerKm);
-console.log(ticketPrice);
 
 // Creates a discount for underage people
 var discountUnderAge = (ticketPrice / 100) * 20;
-console.log(discountUnderAge);
 
 // Creates a discount for seniors
 var discountSenior = (ticketPrice / 100) * 40;
-console.log(discountSenior);
 
 // Empty final price which will be calculated
 var finalPrice;
@@ -36,6 +36,7 @@ if (userAge < 18) {
 } else {
     finalPrice = ticketPrice
 }
-console.log(finalPrice);
 
-document.getElementById('final_price').innerHTML = "Your ticket's price is " + finalPrice.toFixed(2) + "$"
+document.getElementById('user_name').innerHTML = userName.toUpperCase()
+document.getElementById('user_distance').innerHTML = userDistance + "km"
+document.getElementById('final_price').innerHTML = "Ticket's price: " + finalPrice.toFixed(2) + "$"

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 775px;
+}
+
+.ticket{
+    background-image: url('../img/train_ticket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 325px;
+    width: 775px;
+}
+
+
+#user_name, #user_distance, #final_price{
+    height: 23px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 27px;
+}
+
+#user_distance{
+    margin: 24px 0 26px 27px;
+}
+
